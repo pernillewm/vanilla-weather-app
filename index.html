@@ -15,6 +15,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>weather app</title>
   </head>
@@ -24,10 +25,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Trondheim</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Torsdag 13:05</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -37,15 +38,15 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="clear"
                 />
-                <strong>19</strong>
+                <strong id="temperature"></strong>
                 <span class="units">°C | <a href="#">°F</a></span>
               </div>
             </div>
 
             <div class="col-6">
               <ul>
-                <li>Humidity: 70%</li>
-                <li>Wind: 0 km/h</li>
+                <li>Humidity: <span id="humidity">%</span>%</li>
+                <li>Wind: <span id="wind"></span> m/s</li>
               </ul>
             </div>
           </div>
@@ -54,7 +55,7 @@
           <a
             href="https://github.com/pernillewm/vanilla-weather-app"
             target="_blank"
-            >Open-soource code</a
+            >Open-source code</a
           >, by Pernille W. Myklebust
         </small>
       </div>
