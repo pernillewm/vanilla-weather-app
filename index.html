@@ -11,12 +11,48 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <title>weather app</title>
   </head>
   <body>
     <div class="container">
-      <h1>jello world</h1>
-      <a href="" class="btn btn-primary">CLick me</a>
+      <div class="weather-app">
+        <div class="row">
+          <h1>Trondheim</h1>
+          <ul>
+            <li>Torsdag 13:05</li>
+            <li>Clear</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="clear"
+            />
+          </div>
+
+          <div class="col-4">19°C|°F</div>
+          <div class="col-4">
+            <ul>
+              <li>Humidity: 70%</li>
+              <li>Wind: 0 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a
+          href="https://github.com/pernillewm/vanilla-weather-app"
+          target="_blank"
+          >Open-soource code</a
+        >, by Pernille W. Myklebust
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
