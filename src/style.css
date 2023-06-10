@@ -1,5 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1505578066158-8015e4136f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80");
+  background-size: auto;
+  background-position: center;
 }
 
 h1 {
@@ -7,7 +10,6 @@ h1 {
   font-weight: 100;
   line-height: 20px;
   margin-bottom: 5px;
-  color: #7c7c7c;
 }
 
 ul {
@@ -18,7 +20,7 @@ ul {
 li {
   font-size: 16px;
   font-weight: 100;
-  line-height: 1;
+  line-height: 1.2;
   list-style: none;
   color: #7c7c7c;
   margin: 0;
@@ -28,6 +30,7 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
 a {
   text-decoration: none;
 }
@@ -40,6 +43,7 @@ a {
   border: 1px solid #dadde1;
   border-radius: 10px;
   padding: 20px;
+  background-color: #dde4e7;
 }
 
 .overview {
@@ -48,8 +52,8 @@ a {
 
 .weather-temperature img {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  height: 68px;
+  width: 68px;
 }
 
 .weather-temperature strong {
@@ -62,15 +66,7 @@ a {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
+  margin-top: 4px;
 }
 
 .weather-forecast {
